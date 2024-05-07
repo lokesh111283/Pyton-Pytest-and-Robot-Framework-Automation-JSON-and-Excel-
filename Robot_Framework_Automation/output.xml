@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0 (Python 3.12.2 on win32)" generated="2024-05-07T16:55:54.306269" rpa="false" schemaversion="5">
+<suite id="s1" name="Logindata" source="F:\PythonTesting\pythonProject\RobotFramework2\Logindata.robot">
+<test id="s1-t1" name="TestCase1" line="9">
+<kw name="LoginPage.validate the Login" owner="LoginPage">
+<kw name="DriverURLInfo.open the browser" owner="DriverURLInfo">
+<kw name="Create Webdriver" owner="SeleniumLibrary">
+<msg time="2024-05-07T16:55:55.317784" level="INFO">Creating an instance of the Firefox WebDriver.</msg>
+<msg time="2024-05-07T16:55:55.326777" level="INFO">Applicable driver not found; attempting to install with Selenium Manager (Beta)</msg>
+<arg>Firefox</arg>
+<arg>executable_path="E:\\Selenium3\\geckodriver.exe"</arg>
+<doc>Creates an instance of Selenium WebDriver.</doc>
+<status status="PASS" start="2024-05-07T16:55:55.317784" elapsed="14.793863"/>
+</kw>
+<kw name="Go To" owner="SeleniumLibrary">
+<msg time="2024-05-07T16:56:10.113646" level="INFO">Opening url 'https://rahulshettyacademy.com/client'</msg>
+<arg>${url}</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<status status="PASS" start="2024-05-07T16:56:10.112645" elapsed="2.701450"/>
+</kw>
+<status status="PASS" start="2024-05-07T16:55:55.313814" elapsed="17.501280"/>
+</kw>
+<kw name="LoginPage.Login to WebPage" owner="LoginPage">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-05-07T16:56:12.820093" level="INFO">Typing text 'kumar@abcd.com' into text field 'id:userEmail'.</msg>
+<arg>${loc_id}</arg>
+<arg>${username}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-07T16:56:12.817092" elapsed="0.881504"/>
+</kw>
+<kw name="Input Password" owner="SeleniumLibrary">
+<msg time="2024-05-07T16:56:13.700587" level="INFO">Typing password into text field 'id:userPassword'.</msg>
+<msg time="2024-05-07T16:56:13.829513" level="INFO">Temporally setting log level to: NONE</msg>
+<arg>${loc_pwd}</arg>
+<arg>${password}</arg>
+<doc>Types the given password into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-07T16:56:13.699587" elapsed="0.271844"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2024-05-07T16:56:13.973429" level="INFO">Clicking button 'id:login'.</msg>
+<arg>${loc_Button}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-07T16:56:13.972430" elapsed="0.362383"/>
+</kw>
+<arg>${loc_id}</arg>
+<arg>${loc_pwd}</arg>
+<arg>${loc_Button}</arg>
+<arg>${username}</arg>
+<arg>${password}</arg>
+<status status="PASS" start="2024-05-07T16:56:12.815094" elapsed="1.519719"/>
+</kw>
+<kw name="verify if login completed" owner="LoginPage">
+<kw name="Get Text" owner="SeleniumLibrary">
+<msg time="2024-05-07T16:56:14.920439" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-13.png"&gt;&lt;img src="selenium-screenshot-13.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2024-05-07T16:56:14.921438" level="FAIL">Element with locator 'css:div[class='left mt-1'] h3' not found.</msg>
+<var>${logintext}</var>
+<arg>${login_confirmation}</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="FAIL" start="2024-05-07T16:56:14.336812" elapsed="1.027250">Element with locator 'css:div[class='left mt-1'] h3' not found.</status>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<arg>${logintext}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="NOT RUN" start="2024-05-07T16:56:15.368064" elapsed="0.000000"/>
+</kw>
+<kw name="Should Be Equal As Strings" owner="BuiltIn">
+<arg>${logintext}</arg>
+<arg>AUTOMATION</arg>
+<doc>Fails if objects are unequal after converting them to strings.</doc>
+<status status="NOT RUN" start="2024-05-07T16:56:15.369058" elapsed="0.000000"/>
+</kw>
+<status status="FAIL" start="2024-05-07T16:56:14.335813" elapsed="1.034245">Element with locator 'css:div[class='left mt-1'] h3' not found.</status>
+</kw>
+<kw name="LogoutPage.Logout from WebPage" owner="LogoutPage">
+<status status="NOT RUN" start="2024-05-07T16:56:15.371058" elapsed="0.000000"/>
+</kw>
+<kw name="LogoutPage.Verify if logout Completed" owner="LogoutPage">
+<status status="NOT RUN" start="2024-05-07T16:56:15.371058" elapsed="0.000000"/>
+</kw>
+<kw name="DriverURLInfo.Close the Login Browser" owner="DriverURLInfo">
+<status status="NOT RUN" start="2024-05-07T16:56:15.372058" elapsed="0.000000"/>
+</kw>
+<arg>kumar@abcd.com</arg>
+<arg>Lokesh1231</arg>
+<status status="FAIL" start="2024-05-07T16:55:55.312815" elapsed="20.059243">Element with locator 'css:div[class='left mt-1'] h3' not found.</status>
+</kw>
+<status status="FAIL" start="2024-05-07T16:55:55.309789" elapsed="20.063267">Element with locator 'css:div[class='left mt-1'] h3' not found.</status>
+</test>
+<test id="s1-t2" name="TestCase2" line="10">
+<kw name="LoginPage.validate the Login" owner="LoginPage">
+<kw name="DriverURLInfo.open the browser" owner="DriverURLInfo">
+<kw name="Create Webdriver" owner="SeleniumLibrary">
+<msg time="2024-05-07T16:56:15.387202" level="INFO">Creating an instance of the Firefox WebDriver.</msg>
+<msg time="2024-05-07T16:56:15.390205" level="INFO">Applicable driver not found; attempting to install with Selenium Manager (Beta)</msg>
+<arg>Firefox</arg>
+<arg>executable_path="E:\\Selenium3\\geckodriver.exe"</arg>
+<doc>Creates an instance of Selenium WebDriver.</doc>
+<status status="PASS" start="2024-05-07T16:56:15.386204" elapsed="12.460579"/>
+</kw>
+<kw name="Go To" owner="SeleniumLibrary">
+<msg time="2024-05-07T16:56:27.849784" level="INFO">Opening url 'https://rahulshettyacademy.com/client'</msg>
+<arg>${url}</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<status status="PASS" start="2024-05-07T16:56:27.847781" elapsed="4.582339"/>
+</kw>
+<status status="PASS" start="2024-05-07T16:56:15.384204" elapsed="17.046915"/>
+</kw>
+<kw name="LoginPage.Login to WebPage" owner="LoginPage">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-05-07T16:56:32.437114" level="INFO">Typing text 'kumar@abcde.com' into text field 'id:userEmail'.</msg>
+<arg>${loc_id}</arg>
+<arg>${username}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-07T16:56:32.435126" elapsed="0.247848"/>
+</kw>
+<kw name="Input Password" owner="SeleniumLibrary">
+<msg time="2024-05-07T16:56:32.683973" level="INFO">Typing password into text field 'id:userPassword'.</msg>
+<msg time="2024-05-07T16:56:32.699963" level="INFO">Temporally setting log level to: NONE</msg>
+<arg>${loc_pwd}</arg>
+<arg>${password}</arg>
+<doc>Types the given password into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-07T16:56:32.682974" elapsed="0.195887"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2024-05-07T16:56:32.881859" level="INFO">Clicking button 'id:login'.</msg>
+<arg>${loc_Button}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-07T16:56:32.880860" elapsed="0.333861"/>
+</kw>
+<arg>${loc_id}</arg>
+<arg>${loc_pwd}</arg>
+<arg>${loc_Button}</arg>
+<arg>${username}</arg>
+<arg>${password}</arg>
+<status status="PASS" start="2024-05-07T16:56:32.432117" elapsed="0.783603"/>
+</kw>
+<kw name="verify if login completed" owner="LoginPage">
+<kw name="Get Text" owner="SeleniumLibrary">
+<msg time="2024-05-07T16:56:33.714041" level="INFO">${logintext} = AUTOMATION</msg>
+<var>${logintext}</var>
+<arg>${login_confirmation}</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-07T16:56:33.216720" elapsed="0.498333"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2024-05-07T16:56:33.716041" level="INFO">AUTOMATION</msg>
+<arg>${logintext}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2024-05-07T16:56:33.715053" elapsed="0.000988"/>
+</kw>
+<kw name="Should Be Equal As Strings" owner="BuiltIn">
+<arg>${logintext}</arg>
+<arg>AUTOMATION</arg>
+<doc>Fails if objects are unequal after converting them to strings.</doc>
+<status status="PASS" start="2024-05-07T16:56:33.718040" elapsed="0.007994"/>
+</kw>
+<status status="PASS" start="2024-05-07T16:56:33.215720" elapsed="0.510314"/>
+</kw>
+<kw name="LogoutPage.Logout from WebPage" owner="LogoutPage">
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2024-05-07T16:56:33.729034" level="INFO">Clicking button 'xpath://button[normalize-space()='Sign Out']'.</msg>
+<arg>${sign_out}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-07T16:56:33.729034" elapsed="0.382815"/>
+</kw>
+<status status="PASS" start="2024-05-07T16:56:33.727034" elapsed="0.384815"/>
+</kw>
+<kw name="LogoutPage.Verify if logout Completed" owner="LogoutPage">
+<kw name="Get Text" owner="SeleniumLibrary">
+<msg time="2024-05-07T16:56:34.150825" level="INFO">${logouttext} = Log in</msg>
+<var>${logouttext}</var>
+<arg>${logout_confirmation}</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-07T16:56:34.114847" elapsed="0.035978"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2024-05-07T16:56:34.151825" level="INFO">Log in</msg>
+<arg>${logouttext}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2024-05-07T16:56:34.150825" elapsed="0.001000"/>
+</kw>
+<kw name="Should Be Equal As Strings" owner="BuiltIn">
+<arg>${logouttext}</arg>
+<arg>Log in</arg>
+<doc>Fails if objects are unequal after converting them to strings.</doc>
+<status status="PASS" start="2024-05-07T16:56:34.152825" elapsed="0.001006"/>
+</kw>
+<status status="PASS" start="2024-05-07T16:56:34.112849" elapsed="0.041974"/>
+</kw>
+<kw name="DriverURLInfo.Close the Login Browser" owner="DriverURLInfo">
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2024-05-07T16:56:34.155834" elapsed="5.863648"/>
+</kw>
+<status status="PASS" start="2024-05-07T16:56:34.154823" elapsed="5.864659"/>
+</kw>
+<arg>kumar@abcde.com</arg>
+<arg>Kumar123</arg>
+<status status="PASS" start="2024-05-07T16:56:15.380206" elapsed="24.640299"/>
+</kw>
+<status status="PASS" start="2024-05-07T16:56:15.377204" elapsed="24.644281"/>
+</test>
+<doc>File which has all the login credentials data</doc>
+<status status="FAIL" start="2024-05-07T16:55:54.312290" elapsed="45.715224"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="1" skip="0" id="s1" name="Logindata">Logindata</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

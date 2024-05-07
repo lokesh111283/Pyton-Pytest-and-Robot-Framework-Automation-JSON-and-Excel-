@@ -1,0 +1,36 @@
+1715097744494	geckodriver	INFO	Listening on 127.0.0.1:61963
+1715097747623	mozrunner::runner	INFO	Running command: "C:\\Program Files (x86)\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "61964" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\Dell\\AppData\\Local\\Temp\\rust_mozprofileqzpcHz"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+Dynamically enable window occlusion 0
+1715097750057	Marionette	INFO	Marionette enabled
+1715097750299	Marionette	INFO	Listening on port 61972
+WebDriver BiDi listening on ws://127.0.0.1:61964
+Read port: 61972
+1715097750881	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+DevTools listening on ws://127.0.0.1:61964/devtools/browser/b82e6186-5c01-4ddd-89fc-a52f8a4fee19
+1715097760550	Marionette	INFO	Stopped listening on port 61972
+JavaScript warning: https://rahulshettyacademy.com/client/polyfills.bd0c6ffd915d0ed70d31.js, line 1: Script terminated by timeout at:
+invokeTask@https://rahulshettyacademy.com/client/polyfills.bd0c6ffd915d0ed70d31.js:1:8132
+7277/m/this.invoke<@https://rahulshettyacademy.com/client/polyfills.bd0c6ffd915d0ed70d31.js:1:8089
+7277/pe/d/m.args[0]@https://rahulshettyacademy.com/client/polyfills.bd0c6ffd915d0ed70d31.js:1:27917
+
+Dynamically enable window occlusion 1
+1715097766155	geckodriver	INFO	Listening on 127.0.0.1:62007
+1715097769207	mozrunner::runner	INFO	Running command: "C:\\Program Files (x86)\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "62008" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\Dell\\AppData\\Local\\Temp\\rust_mozprofileTHKrFO"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+Dynamically enable window occlusion 0
+1715097770494	Marionette	INFO	Marionette enabled
+1715097770657	Marionette	INFO	Listening on port 62015
+WebDriver BiDi listening on ws://127.0.0.1:62008
+Read port: 62015
+1715097771144	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+DevTools listening on ws://127.0.0.1:62008/devtools/browser/c4902371-6007-4b87-a1ca-d6d9d03fab66
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://rahulshettyacademy.com."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://rahulshettyacademy.com."
+1715097778773	Marionette	INFO	Stopped listening on port 62015
+JavaScript warning: https://rahulshettyacademy.com/client/polyfills.bd0c6ffd915d0ed70d31.js, line 1: Script terminated by timeout at:
+B@https://rahulshettyacademy.com/client/polyfills.bd0c6ffd915d0ed70d31.js:1:21347
+
+Dynamically enable window occlusion 1

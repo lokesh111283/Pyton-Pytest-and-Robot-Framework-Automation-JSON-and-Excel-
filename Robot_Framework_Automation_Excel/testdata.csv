@@ -1,0 +1,3 @@
+*** Test Cases ***,${username},${password}
+Test Case1,kumar@abcd.com,Lokesh1231
+Test Case2,kumar@abcde.com,Kumar123
